@@ -1,14 +1,14 @@
 import time
 from functions import NexmoBot
 
-APIKEY = "live_yyG35GmvN0qQDSqkHuYqYA1BGo0KUh4mz8wMt8pCpVKA"
+APIKEY = "API"
 billingZip = 29451
 VCCFile = "VCC.txt"
 state = "CA"
 paypalState = "CA"
 EmailsFile = "emails.txt"
 city = "Isle of palms"
-twoCaptchaAPI = "5a57742b5a84d7e5a6860c701c4419a4"
+twoCaptchaAPI = "API"
 bot = NexmoBot()
 for card,email in zip(bot.getCardNumbers(VCCFile=VCCFile),bot.getEmail(EmailFile=EmailsFile)):
     userData = bot.formData(email=email[0],password=email[1],zipCode=billingZip,city=city)
